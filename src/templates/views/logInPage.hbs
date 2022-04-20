@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+        <link rel="stylesheet" href="./css/navBar.css">
+        <link rel="stylesheet" href="./css/login.css">
+    </head>
+    <body>
+    {{>navBar}}
+    <form id="formBox" class="modal-content animate" action="/logInPage" method="post">
+        <div class="container">
+            <label for="uname" style="color: #00c7d1"><b>Email Id</b></label>
+            <input type="text" placeholder="Enter Email Id" name="email" required>
+            <label for="ppwd" style="color: #00c7d1"><b>Password </b></label>
+            <input type="password" placeholder="Enter Password" name="password" required> 
+            <input class="logininside" style="box-shadow: 6px 6px 10px #dbdbdb;" type="submit" value="login">
+        </div>
+    </form> 
+    </body>
+</html>

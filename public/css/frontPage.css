@@ -1,0 +1,98 @@
+.hold{
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+}
+body{
+    background-color: #f1f1f1;
+}
+#test{
+    background-color: #ffffff;
+    width: 500px;
+    height: 250px;
+    border-radius: 40px;
+    padding: 50px;
+    box-shadow: 3px 3px 20px #dbdbdb;
+}
+.headd{
+    display: flex;
+    justify-content: center;
+}
+.click{
+    display: flex;
+    justify-content: center;
+}
+h1{
+    margin-top: auto;
+    color:#00c7d1;
+    font-size: 38px;
+}
+.login{
+    /*login button*/
+    color: rgb(255, 255, 255);
+    width: 80px;
+    font-family: "Trirong", sans-serif;
+    margin: 50px;
+    padding : 15px;
+    background-color: #00c7d1;
+    border-radius: 30px;
+    border: 0px;
+    display: inline-block;
+    border-style: solid;
+    box-shadow: 6px 6px 10px #dbdbdb;
+}
+.signup{
+    /*signup button*/
+    color: rgb(255, 255, 255);
+    width: 80px;
+    font-family: "Trirong", sans-serif;
+    margin: 50px;
+    padding : 15px;
+    background-color: #00c7d1;
+    border-radius: 30px;
+    border: 0px;
+    display: inline-block;
+    border-style: solid;
+    box-shadow: 6px 6px 10px #dbdbdb;
+}
+
+button:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.img{
+    background-color: #00c7d1;
+    margin: 10px;
+    margin-top: 5px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 0;
+    border-radius: 0;
+    display: flex;
+    box-shadow: 6px 6px 10px #dbdbdb;
+}
+#name{
+    color: white;
+    font-size: 48px;
+    text-align: center;
+    margin-top: 0;
+}
+#add{
+    color: white;
+    font-size: 30px;
+    margin-left: 60px;
+    margin-top: -30px;
+    text-align: center;
+}
+.title{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.portal{
+    font-size: 20px;
+    color: #00c7d1;
+    text-align: center;
+}

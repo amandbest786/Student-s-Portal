@@ -1,0 +1,19 @@
+body{
+    background-color: #f1f1f1;
+}
+
+.container{
+    background-color: rgb(255, 255, 255);
+    padding: 50px;
+    border-radius: 20px;
+    width: 450px;
+    height: 80px;
+    text-align: center;
+    box-shadow: 3px 3px 20px #dbdbdb;
+    margin-top: 250px;
+    margin-left: 400px;
+}
+
+h1{
+    font-family: 'Playfair Display', serif
+}

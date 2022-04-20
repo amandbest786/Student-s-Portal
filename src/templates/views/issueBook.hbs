@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/navBar.css">
+        <link rel="stylesheet" href="./css/issueBook.css">
+    </head>
+    <body>
+    {{>navBar}}
+    <form id="formm" style="font-family: 'Playfair Display', serif" class="modal-content animate" action="/issueBook" method="post">
+        <div class="container2">
+            <label for="name" style="color: #00c7d1"><b>Name</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Name" name="name" required>
+            <label for="dpt" style="color: #00c7d1"><b>Department</b></label>
+            <select name="Department" id="dpt">
+                <option value="Maths">Department of Maths</option>
+                <option value="Physics">Department of Physics</option>
+                <option value="Chemistry">Department of Chemistry</option>
+                <option value="Geology">Department of Geology</option>
+                <option value="Microbiology">Department of Microbiology</option>
+                <option value="Botany">Department of Botany</option>
+                <option value="Zoology">Department of Zoology</option>
+                <option value="Application">Department of Computer Application</option>
+                <option value="Technology">Department of Information Technology</option>
+                <option value="Computer">Department of Computer Science</option>
+                <option value="English">Department of English</option>
+                <option value="Hindi">Department of Hindi</option>
+            </select>
+            <label for="psw" style="color: #00c7d1"><b>Issuing Date</b></label>
+            <input class="formLabel" type="text" placeholder="(DD/MM/YYYY)" name="issuingDate" required>
+            <label for="dpt" style="color: #00c7d1"><b>Available Books</b></label>
+            <select name="BookList" id="dpt">
+                <option value="Madame Bovary">Madame Bovary</option>
+                <option value="The Odyssey">The Odyssey</option>
+                <option value="Hamlet">Hamlet</option>
+                <option value="War and Peace">War and Peace</option>
+                <option value="Moby Dick">Moby Dick</option>
+                <option value="The Great Gatsby">The Great Gatsby</option>
+                <option value="One Hundred Years of Solitude">One Hundred Years of Solitude</option>
+                <option value="Don Quixote ">Don Quixote </option>
+                <option value="Ulysses">Ulysses</option>
+                <option value="In Search of Lost Time">In Search of Lost Time</option>
+                <option value="The Divine Comedy">The Divine Comedy</option>
+                <option value="The Brothers Karamazov">The Brothers Karamazov</option>  
+            </select>
+            <input class="signupinside" type="submit" value="Issue Book Now">
+        </div>
+    </form>
+    </body>
+</html>

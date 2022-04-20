@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="./css/signUp.css">
+        <link rel="stylesheet" href="./css/navBar.css">
+    </head>
+    <body>
+        {{>navBar}}
+        <form id="formm" style="font-family: 'Playfair Display', serif" class="modal-content animate" action="/fillOnlineForm" method="post">
+            <div class="container2">
+            <label for="name" style="color: #00c7d1"><b>Name</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Name" name="Name" required>
+            <label for="name" style="color: #00c7d1"><b>Father's Name</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Father's Name" name="fName" required>
+            <label for="name" style="color: #00c7d1"><b>Mother's Name</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Mother's Name" name="mName" required>
+            <label for="gender" style="color: #00c7d1"><b>Gender</b></label>
+            <select name="Gender" id="gender">
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="dpt" style="color: #00c7d1"><b>Department</b></label>
+            <select name="Department" id="dpt">
+                <option value="Maths">Department of Maths</option>
+                <option value="Physics">Department of Physics</option>
+                <option value="Chemistry">Department of Chemistry</option>
+                <option value="Geology">Department of Geology</option>
+                <option value="Microbiology">Department of Microbiology</option>
+                <option value="Botany">Department of Botany</option>
+                <option value="Zoology">Department of Zoology</option>
+                <option value="Application">Department of Computer Application</option>
+                <option value="Technology">Department of Information Technology</option>
+                <option value="Computer">Department of Computer Science</option>
+                <option value="English">Department of English</option>
+                <option value="Hindi">Department of Hindi</option>
+            </select>
+            <label for="sms" style="color: #00c7d1"><b>Semester</b></label>
+            <select name="Semester" id="sms">
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+            </select>
+            <input class="signupinside" type="submit" value="Pay Fee & save Details">
+        </form>
+    </body>
+</html>

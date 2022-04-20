@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en"> 
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/navBar.css">
+        <link rel="stylesheet" href="./css/signup.css">
+    </head>
+    <body>
+    {{>navBar}}
+    <form id="formm" style="font-family: 'Playfair Display', serif" class="modal-content animate" action="/signUpPage" method="post">
+        <div class="container2">
+            <label for="name" style="color: #00c7d1"><b>Name</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Name" name="Name" required>
+            <label for="email" style="color: #00c7d1"><b>Email</b></label>
+            <input class="formLabel" type="text" placeholder="Enter Email" name="Email" required>
+            <label for="dpt" style="color: #00c7d1"><b>Department</b></label>
+            <select name="Department" id="dpt">
+                <option value="Maths">Department of Maths</option>
+                <option value="Physics">Department of Physics</option>
+                <option value="Chemistry">Department of Chemistry</option>
+                <option value="Geology">Department of Geology</option>
+                <option value="Microbiology">Department of Microbiology</option>
+                <option value="Botany">Department of Botany</option>
+                <option value="Zoology">Department of Zoology</option>
+                <option value="Application">Department of Computer Application</option>
+                <option value="Technology">Department of Information Technology</option>
+                <option value="Computer">Department of Computer Science</option>
+                <option value="English">Department of English</option>
+                <option value="Hindi">Department of Hindi</option>
+            </select>
+            <label for="sms" style="color: #00c7d1"><b>Semester</b></label>
+            <select name="Semester" id="sms">
+                <option value="1st">1st Semester</option>
+                <option value="2nd">2nd Semester</option>
+                <option value="3rd">3rd Semester</option>
+                <option value="4th">4th Semester</option>
+                <option value="5th">5th Semester</option>
+                <option value="6th">6th Semester</option>
+            </select>
+            <label for="psw" style="color: #00c7d1"><b>Password</b></label>
+            <input class="formLabel" type="password" placeholder="Enter Password" name="Password" required>
+            <label for="cpsw" style="color: #00c7d1"><b>Confirm Password</b></label>
+            <input class="formLabel" type="password" placeholder="Confirm Password" name="ConfirmPassword" required>
+            <input class="signupinside" type="submit" value="Register">
+        </div>
+    </form>
+    </body>
+</html>
